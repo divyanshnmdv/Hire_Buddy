@@ -1,8 +1,6 @@
 import axios from "axios"
 
 
-
-
 const api = axios.create({
     baseURL: "https://hire-buddy.onrender.com",
     withCredentials: true

@@ -55,11 +55,11 @@ async function registerUserController(req, res) {
     })
     }
     catch(err){
-        console.log(err)
-        res.status(400).json({
-            message: "registration failed"
-        })
-    }
+    console.log(err)
+    res.status(500).json({
+        message: err.message
+    })
+}
 
 }
 

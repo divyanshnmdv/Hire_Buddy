@@ -7,10 +7,11 @@ const app = express()
 
 app.use(express.json())
 app.use(cookieParser())
-app.use(cors({
+/*app.use(cors({
     origin: process.env.FRONTEND_URL,
     credentials: true
-}))
+}))*/
+app.use(express.static("./public"))
 
 /* require all the routes here */
 const authRouter = require("./routes/auth.routes")
